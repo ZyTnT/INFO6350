@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  RollingDice
 //
-//  Created by 赵芷涵 on 9/11/21.
+//  Created by Yutong Zhen on 9/11/21.
 //
 
 import UIKit
