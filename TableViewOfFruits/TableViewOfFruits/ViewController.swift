@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var fruit = ["pineapple", "strawberry", "papaya", "cherry", "tangerinr"]
+    var fruit = ["pineapple", "strawberry", "papaya", "cherry", "tangerinr", "avocado", "blueberry", "cantaloupe", "raspberry"]
 
     @IBOutlet weak var tblView: UITableView!
     
