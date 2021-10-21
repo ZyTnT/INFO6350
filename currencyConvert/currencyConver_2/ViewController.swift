@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var fromPicker: UIPickerView!
     @IBOutlet weak var toPicker: UIPickerView!
     @IBOutlet weak var lblResult: UILabel!
-    let baseURL = "http://api.exchangeratesapi.io/v1/latest?access_key=0b85a5f2c10b726eb98c0dc74e8aef56&symbols=USD,CAD,JPY"
+    let baseURL = "http://api.exchangeratesapi.io/v1/latest?access_key=5d31b19e72b1593b8e0edf2caeb33987&symbols=USD,CAD,JPY"
     
     var currencyList: [String] = [String]()
 
@@ -44,6 +44,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func Convert(_ sender: Any) {
         var fromCurrency = currencyList[fromPicker.selectedRow(inComponent: 0)]
         var toCurrency = currencyList[toPicker.selectedRow(inComponent: 0)]
+        
         AF.request(baseURL).responseJSON{ response in
             if response.error != nil{
                 print(response.error)
